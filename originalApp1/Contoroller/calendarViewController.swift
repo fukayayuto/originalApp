@@ -17,14 +17,14 @@ class calendarViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        View.frame = CGRect(x: 0, y: 0, width: view.frame.size.width, height: view.frame.size.height - 50)
-//        view.addSubview(View)
-//        View.backgroundColor = .blue
+
      
         let calendar = YYCalendar(normalCalendarLangType: .JPN, date: "07/01/2020", format: "MM/dd/yyyy") { date in
+            
             print(date)
+            
         }
-
+        calendar.bodyViewBackgroundColor = .systemBlue
         calendar.show()
         
         

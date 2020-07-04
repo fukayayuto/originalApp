@@ -7,13 +7,14 @@
 //
 
 import UIKit
+import Lottie
 
 class TomorrowViewController: UITableViewController, UITextFieldDelegate {
 
     
     let todoTextFiled = UITextField()
     
-   var scheduleArray:[String] = []
+   var scheduleArray:[String] = ["明日の予定"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -72,6 +73,19 @@ class TomorrowViewController: UITableViewController, UITextFieldDelegate {
         pushAddButton()
            
        }
+    
+    func showAnimation() {
+             let animationView = AnimationView(name: "checkAnimation")
+              animationView.frame = CGRect(x: 0, y: 0, width: view.bounds.width/2, height: view.bounds.height/2)
+              animationView.center = self.view.center
+              animationView.contentMode = .scaleAspectFit
+              animationView.animationSpeed = 0.5
+             
+
+              view.addSubview(animationView)
+
+              animationView.play()
+          }
 
     // MARK: - Table view data source
 
@@ -93,9 +107,16 @@ class TomorrowViewController: UITableViewController, UITextFieldDelegate {
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return view.frame.size.height/8
     }
 
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+        scheduleArray.remove(at: indexPath.row)
+        showAnimation()
+        tableView.reloadData()
+        
+    }
     /*
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)

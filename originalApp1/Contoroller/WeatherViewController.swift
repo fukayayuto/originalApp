@@ -17,18 +17,23 @@ class WeatherViewController: UITableViewController,SegementSlideContentScrollVie
     
 
 //    var weatherData = WeatherData()
-    
+    var areaStringArray = [String]()
     var weatherIconArray = [String]()
-    var descriptionStringArray = [String]()
+    var tempuretureArray = [Int]()
+    var descriptionArray = [String]()
+    var weatherIdArray = [Int]()
     
-    var pickerView: UIPickerView = UIPickerView()
-    let list = ["Osaka", "Tokyo", "Nagoya", "Okinawa"]
-    
+//    var pickerView: UIPickerView = UIPickerView()
+//    let list = ["Osaka", "Tokyo", "Nagoya", "Okinawa"]
+//
     let textField = UITextField()
     
     override func viewDidLoad() {
         super.viewDidLoad()
 
+         tableView.register(UINib(nibName: "WeatherCell", bundle: nil), forCellReuseIdentifier: "WeatherCell")
+        
+        
 //      pickerView.delegate = self
 //      pickerView.dataSource = self
 //      pickerView.showsSelectionIndicator = true
@@ -88,10 +93,26 @@ class WeatherViewController: UITableViewController,SegementSlideContentScrollVie
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     
-    let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")
-    cell.selectionStyle = .none
-    cell.textLabel?.text = weatherIconArray[indexPath.row]
-    cell.detailTextLabel?.text = descriptionStringArray[indexPath.row]
+    let cell = tableView.dequeueReusableCell(withIdentifier: "WeatherCell") as! WeatherCell
+        cell.areaTextLabel.text = areaStringArray[indexPath.row]
+        cell.descriptionLabel.text = descriptionArray[indexPath.row]
+//        cell.tempuretureLabel.text = String(tempuretureArray[indexPath.row])
+        
+        switch weatherIdArray[0]{
+        case 200..<300:   cell.IconLabel.text = "⚡️"
+        case 300..<400:  cell.IconLabel.text = "🌫"
+        case 500..<600:  cell.IconLabel.text = "☔️"
+        case 600..<700:  cell.IconLabel.text = "⛄️"
+        case 700..<800: cell.IconLabel.text = "🌪"
+        case 800:  cell.IconLabel.text = "☀️"
+        case 801..<900: cell.IconLabel.text = "☁️"
+        case 900..<1000: cell.IconLabel.text = "🌀"
+        default:  cell.IconLabel.text = "☁️"
+               }
+        
+        
+        
+        
     
     return cell
         
@@ -99,14 +120,14 @@ class WeatherViewController: UITableViewController,SegementSlideContentScrollVie
     
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return view.frame.size.height - 100
+        return view.frame.height
     }
     
      func getData(){
             
-//           var APIkey = "e04fe4486dabd3474c04d1ab09072920"
+//        var APIkey = "e04fe4486dabd3474c04d1ab09072920"
 //        var area = "Osaka"
-        let urlText:String = "https://api.openweathermap.org/data/2.5/weather?q=Osaka&appid=e04fe4486dabd3474c04d1ab09072920"
+        let urlText:String = "https://api.openweathermap.org/data/2.5/weather?lang=ja&q=Osaka&appid=e04fe4486dabd3474c04d1ab09072920"
         let urlQuery = urlText.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
         let url = URL(string: urlQuery!)
        
@@ -120,11 +141,17 @@ class WeatherViewController: UITableViewController,SegementSlideContentScrollVie
             let json:JSON = JSON(responce.data as Any)
             print(json)
             let weatherIcon = json["weather"][0]["main"].string
-            let descriptionString = json["weather"][0]["description"].string
+//            let tempureture = json["main"][0]["temp"].int
+            let area  = json["name"].string
+            let description = json["weather"][0]["description"].string
+            let weatherId = json["weather"][0]["id"].int
+            
             
             self.weatherIconArray.append(weatherIcon!)
-            self.descriptionStringArray.append(descriptionString!)
-            
+//            self.tempuretureArray.append(tempureture!)
+            self.areaStringArray.append(area!)
+            self.descriptionArray.append(description!)
+            self.weatherIdArray.append(weatherId!)
                             
            case.failure:
             break

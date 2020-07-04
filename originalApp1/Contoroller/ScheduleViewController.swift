@@ -11,7 +11,7 @@ import SegementSlide
 import Lottie
 
 
-class ScheduleViewController: UITableViewController,SegementSlideContentScrollViewDelegate,UITextFieldDelegate {
+class ScheduleViewController: UITableViewController,SegementSlideContentScrollViewDelegate,UITextFieldDelegate, UIGestureRecognizerDelegate {
 
     
     var scheduleArray:[String] = ["体操","ランニング"]
@@ -19,12 +19,14 @@ class ScheduleViewController: UITableViewController,SegementSlideContentScrollVi
     
     let timeTextField = UITextField()
     
+   
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
        tableView.register(UINib(nibName: "TomorrowScheduleCell", bundle: nil), forCellReuseIdentifier: "TomorrowScheduleCell")
+        
         
         let plusbutton:UIButton = UIButton(frame: CGRect(x: 300, y:600, width: 80, height: 80))
         plusbutton.backgroundColor = .black
@@ -113,23 +115,25 @@ class ScheduleViewController: UITableViewController,SegementSlideContentScrollVi
 
     
     
-   
+  
     
     
     func showAnimation() {
            let animationView = AnimationView(name: "checkAnimation")
-           animationView.frame = CGRect(x: 0, y: 0, width: view.bounds.width/2, height: view.bounds.height/2)
+           animationView.frame = CGRect(x: 0, y: 0, width: view.bounds.width/4, height: view.bounds.height/5)
            animationView.center = self.view.center
            animationView.contentMode = .scaleAspectFit
            animationView.animationSpeed = 0.5
-          
-
+           
            view.addSubview(animationView)
 
            animationView.play()
+           
+           
        }
     
-  
+    
+    
     
     // MARK: - Table view data source
 
@@ -151,16 +155,21 @@ class ScheduleViewController: UITableViewController,SegementSlideContentScrollVi
         return cell
     }
     
-    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
-        scheduleArray.remove(at: indexPath.row)
-        showAnimation()
-        tableView.reloadData()
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+         return view.frame.size.height/8
+            }
+    
+//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+//
+//        scheduleArray.remove(at: indexPath.row)
+//        showAnimation()
+//        tableView.reloadData()
+        
     }
     
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           return 80
-       }
+  
+
+
 //    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 //
 //        //スケジュールの変更を可能にする
@@ -229,4 +238,4 @@ class ScheduleViewController: UITableViewController,SegementSlideContentScrollVi
     }
     */
 
-}
+

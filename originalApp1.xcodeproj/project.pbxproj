@@ -10,10 +10,13 @@
 		2632838485932B5E1B281B00 /* Pods_originalApp1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3906B608C884EDC6257FFB29 /* Pods_originalApp1.framework */; };
 		5A02628F24B038D00098E238 /* TomorrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02628E24B038D00098E238 /* TomorrowViewController.swift */; };
 		5A02629124B04E140098E238 /* checkAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A02629024B04E130098E238 /* checkAnimation.json */; };
+		5A02629424B05F530098E238 /* WeatherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02629224B05F530098E238 /* WeatherCell.swift */; };
+		5A02629524B05F530098E238 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A02629324B05F530098E238 /* WeatherCell.xib */; };
+		5A02629A24B07B8B0098E238 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02629824B07B8B0098E238 /* NewsCell.swift */; };
+		5A02629B24B07B8B0098E238 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A02629924B07B8B0098E238 /* NewsCell.xib */; };
 		5A0D498424A89F7100CE466A /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D498324A89F7100CE466A /* NewsData.swift */; };
 		5A0D498624A8A4B700CE466A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D498524A8A4B700CE466A /* WebViewController.swift */; };
 		5A0D498C24A9596800CE466A /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D498B24A9596800CE466A /* calendarViewController.swift */; };
-		5A0D49D024B00CF800CE466A /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D49CF24B00CF800CE466A /* ConfigurationViewController.swift */; };
 		5A0D49D524B0212A00CE466A /* TomorrowScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D49D324B0212A00CE466A /* TomorrowScheduleCell.swift */; };
 		5A0D49D624B0212A00CE466A /* TomorrowScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0D49D424B0212A00CE466A /* TomorrowScheduleCell.xib */; };
 		5A7D480F24A6F2330064AD79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D480E24A6F2330064AD79 /* AppDelegate.swift */; };
@@ -33,10 +36,13 @@
 		3906B608C884EDC6257FFB29 /* Pods_originalApp1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_originalApp1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A02628E24B038D00098E238 /* TomorrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowViewController.swift; sourceTree = "<group>"; };
 		5A02629024B04E130098E238 /* checkAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkAnimation.json; sourceTree = "<group>"; };
+		5A02629224B05F530098E238 /* WeatherCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherCell.swift; sourceTree = "<group>"; };
+		5A02629324B05F530098E238 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
+		5A02629824B07B8B0098E238 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		5A02629924B07B8B0098E238 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
 		5A0D498324A89F7100CE466A /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 		5A0D498524A8A4B700CE466A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		5A0D498B24A9596800CE466A /* calendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
-		5A0D49CF24B00CF800CE466A /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
 		5A0D49D324B0212A00CE466A /* TomorrowScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowScheduleCell.swift; sourceTree = "<group>"; };
 		5A0D49D424B0212A00CE466A /* TomorrowScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TomorrowScheduleCell.xib; sourceTree = "<group>"; };
 		5A7D480B24A6F2330064AD79 /* originalApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = originalApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +130,10 @@
 				5A0D498324A89F7100CE466A /* NewsData.swift */,
 				5A0D49D324B0212A00CE466A /* TomorrowScheduleCell.swift */,
 				5A0D49D424B0212A00CE466A /* TomorrowScheduleCell.xib */,
+				5A02629224B05F530098E238 /* WeatherCell.swift */,
+				5A02629324B05F530098E238 /* WeatherCell.xib */,
+				5A02629824B07B8B0098E238 /* NewsCell.swift */,
+				5A02629924B07B8B0098E238 /* NewsCell.xib */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -144,12 +154,11 @@
 				5A7D481024A6F2330064AD79 /* SceneDelegate.swift */,
 				5A7D482524A6F5740064AD79 /* BaseViewController.swift */,
 				5A7D483B24A724510064AD79 /* ScheduleViewController.swift */,
+				5A02628E24B038D00098E238 /* TomorrowViewController.swift */,
+				5A0D498B24A9596800CE466A /* calendarViewController.swift */,
 				5A7D483F24A743D90064AD79 /* WeatherViewController.swift */,
 				5A7D484224A743FA0064AD79 /* NewsViewController.swift */,
 				5A0D498524A8A4B700CE466A /* WebViewController.swift */,
-				5A0D498B24A9596800CE466A /* calendarViewController.swift */,
-				5A0D49CF24B00CF800CE466A /* ConfigurationViewController.swift */,
-				5A02628E24B038D00098E238 /* TomorrowViewController.swift */,
 			);
 			path = Contoroller;
 			sourceTree = "<group>";
@@ -216,6 +225,8 @@
 			files = (
 				5A7D481B24A6F2360064AD79 /* LaunchScreen.storyboard in Resources */,
 				5A7D481824A6F2360064AD79 /* Assets.xcassets in Resources */,
+				5A02629B24B07B8B0098E238 /* NewsCell.xib in Resources */,
+				5A02629524B05F530098E238 /* WeatherCell.xib in Resources */,
 				5A7D481624A6F2330064AD79 /* Main.storyboard in Resources */,
 				5A0D49D624B0212A00CE466A /* TomorrowScheduleCell.xib in Resources */,
 				5A02629124B04E140098E238 /* checkAnimation.json in Resources */,
@@ -273,9 +284,10 @@
 			files = (
 				5A7D480F24A6F2330064AD79 /* AppDelegate.swift in Sources */,
 				5A7D483C24A724510064AD79 /* ScheduleViewController.swift in Sources */,
+				5A02629424B05F530098E238 /* WeatherCell.swift in Sources */,
 				5A7D481124A6F2330064AD79 /* SceneDelegate.swift in Sources */,
 				5A0D498624A8A4B700CE466A /* WebViewController.swift in Sources */,
-				5A0D49D024B00CF800CE466A /* ConfigurationViewController.swift in Sources */,
+				5A02629A24B07B8B0098E238 /* NewsCell.swift in Sources */,
 				5A02628F24B038D00098E238 /* TomorrowViewController.swift in Sources */,
 				5A0D498C24A9596800CE466A /* calendarViewController.swift in Sources */,
 				5A7D485124A82B5B0064AD79 /* WeatherModel.swift in Sources */,
