@@ -3,27 +3,57 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2632838485932B5E1B281B00 /* Pods_originalApp1.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3906B608C884EDC6257FFB29 /* Pods_originalApp1.framework */; };
+		5A02628F24B038D00098E238 /* TomorrowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02628E24B038D00098E238 /* TomorrowViewController.swift */; };
+		5A02629124B04E140098E238 /* checkAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = 5A02629024B04E130098E238 /* checkAnimation.json */; };
+		5A0D498424A89F7100CE466A /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D498324A89F7100CE466A /* NewsData.swift */; };
+		5A0D498624A8A4B700CE466A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D498524A8A4B700CE466A /* WebViewController.swift */; };
+		5A0D498C24A9596800CE466A /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D498B24A9596800CE466A /* calendarViewController.swift */; };
+		5A0D49D024B00CF800CE466A /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D49CF24B00CF800CE466A /* ConfigurationViewController.swift */; };
+		5A0D49D524B0212A00CE466A /* TomorrowScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D49D324B0212A00CE466A /* TomorrowScheduleCell.swift */; };
+		5A0D49D624B0212A00CE466A /* TomorrowScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A0D49D424B0212A00CE466A /* TomorrowScheduleCell.xib */; };
 		5A7D480F24A6F2330064AD79 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D480E24A6F2330064AD79 /* AppDelegate.swift */; };
 		5A7D481124A6F2330064AD79 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D481024A6F2330064AD79 /* SceneDelegate.swift */; };
-		5A7D481324A6F2330064AD79 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D481224A6F2330064AD79 /* ViewController.swift */; };
 		5A7D481624A6F2330064AD79 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D481424A6F2330064AD79 /* Main.storyboard */; };
 		5A7D481824A6F2360064AD79 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D481724A6F2360064AD79 /* Assets.xcassets */; };
 		5A7D481B24A6F2360064AD79 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A7D481924A6F2360064AD79 /* LaunchScreen.storyboard */; };
+		5A7D482624A6F5740064AD79 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D482524A6F5740064AD79 /* BaseViewController.swift */; };
+		5A7D483C24A724510064AD79 /* ScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D483B24A724510064AD79 /* ScheduleViewController.swift */; };
+		5A7D483E24A7330C0064AD79 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D483D24A7330C0064AD79 /* Schedule.swift */; };
+		5A7D484024A743D90064AD79 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D483F24A743D90064AD79 /* WeatherViewController.swift */; };
+		5A7D484324A743FB0064AD79 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D484224A743FA0064AD79 /* NewsViewController.swift */; };
+		5A7D485124A82B5B0064AD79 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A7D485024A82B5B0064AD79 /* WeatherModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3906B608C884EDC6257FFB29 /* Pods_originalApp1.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_originalApp1.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A02628E24B038D00098E238 /* TomorrowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowViewController.swift; sourceTree = "<group>"; };
+		5A02629024B04E130098E238 /* checkAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = checkAnimation.json; sourceTree = "<group>"; };
+		5A0D498324A89F7100CE466A /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
+		5A0D498524A8A4B700CE466A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		5A0D498B24A9596800CE466A /* calendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
+		5A0D49CF24B00CF800CE466A /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		5A0D49D324B0212A00CE466A /* TomorrowScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TomorrowScheduleCell.swift; sourceTree = "<group>"; };
+		5A0D49D424B0212A00CE466A /* TomorrowScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TomorrowScheduleCell.xib; sourceTree = "<group>"; };
 		5A7D480B24A6F2330064AD79 /* originalApp1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = originalApp1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A7D480E24A6F2330064AD79 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5A7D481024A6F2330064AD79 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		5A7D481224A6F2330064AD79 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5A7D481524A6F2330064AD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5A7D481724A6F2360064AD79 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5A7D481A24A6F2360064AD79 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5A7D481C24A6F2360064AD79 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A7D482524A6F5740064AD79 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5A7D483B24A724510064AD79 /* ScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleViewController.swift; sourceTree = "<group>"; };
+		5A7D483D24A7330C0064AD79 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		5A7D483F24A743D90064AD79 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		5A7D484224A743FA0064AD79 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		5A7D485024A82B5B0064AD79 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+		66A10619C48E70272F8F06F5 /* Pods-originalApp1.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-originalApp1.release.xcconfig"; path = "Target Support Files/Pods-originalApp1/Pods-originalApp1.release.xcconfig"; sourceTree = "<group>"; };
+		E25A2664C7C31F3E94A18BAA /* Pods-originalApp1.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-originalApp1.debug.xcconfig"; path = "Target Support Files/Pods-originalApp1/Pods-originalApp1.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +61,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2632838485932B5E1B281B00 /* Pods_originalApp1.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		08BCDC387A7C70F0B16B54BA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E25A2664C7C31F3E94A18BAA /* Pods-originalApp1.debug.xcconfig */,
+				66A10619C48E70272F8F06F5 /* Pods-originalApp1.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4E86BEE31CAFF19543610906 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3906B608C884EDC6257FFB29 /* Pods_originalApp1.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5A7D480224A6F2330064AD79 = {
 			isa = PBXGroup;
 			children = (
 				5A7D480D24A6F2330064AD79 /* originalApp1 */,
 				5A7D480C24A6F2330064AD79 /* Products */,
+				08BCDC387A7C70F0B16B54BA /* Pods */,
+				4E86BEE31CAFF19543610906 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +106,52 @@
 		5A7D480D24A6F2330064AD79 /* originalApp1 */ = {
 			isa = PBXGroup;
 			children = (
-				5A7D480E24A6F2330064AD79 /* AppDelegate.swift */,
-				5A7D481024A6F2330064AD79 /* SceneDelegate.swift */,
-				5A7D481224A6F2330064AD79 /* ViewController.swift */,
-				5A7D481424A6F2330064AD79 /* Main.storyboard */,
+				5A7D482224A6F5000064AD79 /* Model */,
+				5A7D482324A6F5070064AD79 /* View */,
+				5A7D482424A6F5110064AD79 /* Contoroller */,
 				5A7D481724A6F2360064AD79 /* Assets.xcassets */,
-				5A7D481924A6F2360064AD79 /* LaunchScreen.storyboard */,
 				5A7D481C24A6F2360064AD79 /* Info.plist */,
+				5A02629024B04E130098E238 /* checkAnimation.json */,
 			);
 			path = originalApp1;
+			sourceTree = "<group>";
+		};
+		5A7D482224A6F5000064AD79 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D483D24A7330C0064AD79 /* Schedule.swift */,
+				5A7D485024A82B5B0064AD79 /* WeatherModel.swift */,
+				5A0D498324A89F7100CE466A /* NewsData.swift */,
+				5A0D49D324B0212A00CE466A /* TomorrowScheduleCell.swift */,
+				5A0D49D424B0212A00CE466A /* TomorrowScheduleCell.xib */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5A7D482324A6F5070064AD79 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D481924A6F2360064AD79 /* LaunchScreen.storyboard */,
+				5A7D481424A6F2330064AD79 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5A7D482424A6F5110064AD79 /* Contoroller */ = {
+			isa = PBXGroup;
+			children = (
+				5A7D480E24A6F2330064AD79 /* AppDelegate.swift */,
+				5A7D481024A6F2330064AD79 /* SceneDelegate.swift */,
+				5A7D482524A6F5740064AD79 /* BaseViewController.swift */,
+				5A7D483B24A724510064AD79 /* ScheduleViewController.swift */,
+				5A7D483F24A743D90064AD79 /* WeatherViewController.swift */,
+				5A7D484224A743FA0064AD79 /* NewsViewController.swift */,
+				5A0D498524A8A4B700CE466A /* WebViewController.swift */,
+				5A0D498B24A9596800CE466A /* calendarViewController.swift */,
+				5A0D49CF24B00CF800CE466A /* ConfigurationViewController.swift */,
+				5A02628E24B038D00098E238 /* TomorrowViewController.swift */,
+			);
+			path = Contoroller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +161,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5A7D481F24A6F2360064AD79 /* Build configuration list for PBXNativeTarget "originalApp1" */;
 			buildPhases = (
+				6B89572709ABF792BE8FD4B1 /* [CP] Check Pods Manifest.lock */,
 				5A7D480724A6F2330064AD79 /* Sources */,
 				5A7D480824A6F2330064AD79 /* Frameworks */,
 				5A7D480924A6F2330064AD79 /* Resources */,
+				A4CFD1BD2CC6C7AF1B865970 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -128,19 +217,74 @@
 				5A7D481B24A6F2360064AD79 /* LaunchScreen.storyboard in Resources */,
 				5A7D481824A6F2360064AD79 /* Assets.xcassets in Resources */,
 				5A7D481624A6F2330064AD79 /* Main.storyboard in Resources */,
+				5A0D49D624B0212A00CE466A /* TomorrowScheduleCell.xib in Resources */,
+				5A02629124B04E140098E238 /* checkAnimation.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6B89572709ABF792BE8FD4B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-originalApp1-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A4CFD1BD2CC6C7AF1B865970 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-originalApp1/Pods-originalApp1-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-originalApp1/Pods-originalApp1-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-originalApp1/Pods-originalApp1-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		5A7D480724A6F2330064AD79 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5A7D481324A6F2330064AD79 /* ViewController.swift in Sources */,
 				5A7D480F24A6F2330064AD79 /* AppDelegate.swift in Sources */,
+				5A7D483C24A724510064AD79 /* ScheduleViewController.swift in Sources */,
 				5A7D481124A6F2330064AD79 /* SceneDelegate.swift in Sources */,
+				5A0D498624A8A4B700CE466A /* WebViewController.swift in Sources */,
+				5A0D49D024B00CF800CE466A /* ConfigurationViewController.swift in Sources */,
+				5A02628F24B038D00098E238 /* TomorrowViewController.swift in Sources */,
+				5A0D498C24A9596800CE466A /* calendarViewController.swift in Sources */,
+				5A7D485124A82B5B0064AD79 /* WeatherModel.swift in Sources */,
+				5A0D49D524B0212A00CE466A /* TomorrowScheduleCell.swift in Sources */,
+				5A7D484024A743D90064AD79 /* WeatherViewController.swift in Sources */,
+				5A7D482624A6F5740064AD79 /* BaseViewController.swift in Sources */,
+				5A7D483E24A7330C0064AD79 /* Schedule.swift in Sources */,
+				5A7D484324A743FB0064AD79 /* NewsViewController.swift in Sources */,
+				5A0D498424A89F7100CE466A /* NewsData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +426,7 @@
 		};
 		5A7D482024A6F2360064AD79 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E25A2664C7C31F3E94A18BAA /* Pods-originalApp1.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -293,12 +438,13 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fukaya.originalApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		5A7D482124A6F2360064AD79 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66A10619C48E70272F8F06F5 /* Pods-originalApp1.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -310,7 +456,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.fukaya.originalApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
