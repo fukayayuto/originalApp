@@ -14,6 +14,12 @@
 		5A02629524B05F530098E238 /* WeatherCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A02629324B05F530098E238 /* WeatherCell.xib */; };
 		5A02629A24B07B8B0098E238 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A02629824B07B8B0098E238 /* NewsCell.swift */; };
 		5A02629B24B07B8B0098E238 /* NewsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5A02629924B07B8B0098E238 /* NewsCell.xib */; };
+		5A0262BD24B177D70098E238 /* ConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0262BC24B177D70098E238 /* ConfigurationViewController.swift */; };
+		5A0262C924B1B18B0098E238 /* Base2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0262C824B1B18B0098E238 /* Base2ViewController.swift */; };
+		5A0262CB24B1B2020098E238 /* schedule2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0262CA24B1B2020098E238 /* schedule2ViewController.swift */; };
+		5A0262CD24B1B6B00098E238 /* PlusScheduleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0262CC24B1B6B00098E238 /* PlusScheduleViewController.swift */; };
+		5A0262D124B1CD000098E238 /* TimePickerKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0262D024B1CD000098E238 /* TimePickerKeyboard.swift */; };
+		5A0262D324B1CD410098E238 /* DatePickerKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0262D224B1CD410098E238 /* DatePickerKeyboard.swift */; };
 		5A0D498424A89F7100CE466A /* NewsData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D498324A89F7100CE466A /* NewsData.swift */; };
 		5A0D498624A8A4B700CE466A /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D498524A8A4B700CE466A /* WebViewController.swift */; };
 		5A0D498C24A9596800CE466A /* calendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A0D498B24A9596800CE466A /* calendarViewController.swift */; };
@@ -40,6 +46,12 @@
 		5A02629324B05F530098E238 /* WeatherCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WeatherCell.xib; sourceTree = "<group>"; };
 		5A02629824B07B8B0098E238 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		5A02629924B07B8B0098E238 /* NewsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewsCell.xib; sourceTree = "<group>"; };
+		5A0262BC24B177D70098E238 /* ConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationViewController.swift; sourceTree = "<group>"; };
+		5A0262C824B1B18B0098E238 /* Base2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Base2ViewController.swift; sourceTree = "<group>"; };
+		5A0262CA24B1B2020098E238 /* schedule2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = schedule2ViewController.swift; sourceTree = "<group>"; };
+		5A0262CC24B1B6B00098E238 /* PlusScheduleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlusScheduleViewController.swift; sourceTree = "<group>"; };
+		5A0262D024B1CD000098E238 /* TimePickerKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimePickerKeyboard.swift; sourceTree = "<group>"; };
+		5A0262D224B1CD410098E238 /* DatePickerKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePickerKeyboard.swift; sourceTree = "<group>"; };
 		5A0D498324A89F7100CE466A /* NewsData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsData.swift; sourceTree = "<group>"; };
 		5A0D498524A8A4B700CE466A /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		5A0D498B24A9596800CE466A /* calendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = calendarViewController.swift; sourceTree = "<group>"; };
@@ -134,6 +146,8 @@
 				5A02629324B05F530098E238 /* WeatherCell.xib */,
 				5A02629824B07B8B0098E238 /* NewsCell.swift */,
 				5A02629924B07B8B0098E238 /* NewsCell.xib */,
+				5A0262D024B1CD000098E238 /* TimePickerKeyboard.swift */,
+				5A0262D224B1CD410098E238 /* DatePickerKeyboard.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -159,6 +173,10 @@
 				5A7D483F24A743D90064AD79 /* WeatherViewController.swift */,
 				5A7D484224A743FA0064AD79 /* NewsViewController.swift */,
 				5A0D498524A8A4B700CE466A /* WebViewController.swift */,
+				5A0262BC24B177D70098E238 /* ConfigurationViewController.swift */,
+				5A0262C824B1B18B0098E238 /* Base2ViewController.swift */,
+				5A0262CA24B1B2020098E238 /* schedule2ViewController.swift */,
+				5A0262CC24B1B6B00098E238 /* PlusScheduleViewController.swift */,
 			);
 			path = Contoroller;
 			sourceTree = "<group>";
@@ -284,14 +302,20 @@
 			files = (
 				5A7D480F24A6F2330064AD79 /* AppDelegate.swift in Sources */,
 				5A7D483C24A724510064AD79 /* ScheduleViewController.swift in Sources */,
+				5A0262CB24B1B2020098E238 /* schedule2ViewController.swift in Sources */,
+				5A0262C924B1B18B0098E238 /* Base2ViewController.swift in Sources */,
 				5A02629424B05F530098E238 /* WeatherCell.swift in Sources */,
+				5A0262D124B1CD000098E238 /* TimePickerKeyboard.swift in Sources */,
 				5A7D481124A6F2330064AD79 /* SceneDelegate.swift in Sources */,
 				5A0D498624A8A4B700CE466A /* WebViewController.swift in Sources */,
 				5A02629A24B07B8B0098E238 /* NewsCell.swift in Sources */,
 				5A02628F24B038D00098E238 /* TomorrowViewController.swift in Sources */,
+				5A0262D324B1CD410098E238 /* DatePickerKeyboard.swift in Sources */,
 				5A0D498C24A9596800CE466A /* calendarViewController.swift in Sources */,
 				5A7D485124A82B5B0064AD79 /* WeatherModel.swift in Sources */,
+				5A0262BD24B177D70098E238 /* ConfigurationViewController.swift in Sources */,
 				5A0D49D524B0212A00CE466A /* TomorrowScheduleCell.swift in Sources */,
+				5A0262CD24B1B6B00098E238 /* PlusScheduleViewController.swift in Sources */,
 				5A7D484024A743D90064AD79 /* WeatherViewController.swift in Sources */,
 				5A7D482624A6F5740064AD79 /* BaseViewController.swift in Sources */,
 				5A7D483E24A7330C0064AD79 /* Schedule.swift in Sources */,

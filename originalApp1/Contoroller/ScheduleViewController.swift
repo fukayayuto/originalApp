@@ -28,13 +28,13 @@ class ScheduleViewController: UITableViewController,SegementSlideContentScrollVi
        tableView.register(UINib(nibName: "TomorrowScheduleCell", bundle: nil), forCellReuseIdentifier: "TomorrowScheduleCell")
         
         
-        let plusbutton:UIButton = UIButton(frame: CGRect(x: 300, y:600, width: 80, height: 80))
-        plusbutton.backgroundColor = .black
-        plusbutton.layer.cornerRadius = 30
-        plusbutton.setTitle("+", for: .normal)
-       plusbutton.setTitleColor(.white, for: .normal)
-       plusbutton.addTarget(self, action: #selector(pushPlusButton), for: .touchUpInside)
-       self.view.addSubview(plusbutton)
+//        let plusbutton:UIButton = UIButton(frame: CGRect(x: 300, y:600, width: 80, height: 80))
+//        plusbutton.backgroundColor = .black
+//        plusbutton.layer.cornerRadius = 30
+//        plusbutton.setTitle("+", for: .normal)
+//       plusbutton.setTitleColor(.white, for: .normal)
+//       plusbutton.addTarget(self, action: #selector(pushPlusButton), for: .touchUpInside)
+//       self.view.addSubview(plusbutton)
         
         
         let tomorrowButton:UIButton = UIButton(frame: CGRect(x: 10, y: 600 , width: 120, height:80))
@@ -60,11 +60,13 @@ class ScheduleViewController: UITableViewController,SegementSlideContentScrollVi
     
     
     
-   @objc func pushPlusButton(sender: UIButton){
-        
-        pushAddButton()
-        
-    }
+//   @objc func pushPlusButton(sender: UIButton){
+//
+////        pushAddButton()
+////    let configurationViewContorller = ConfigurationViewController()
+//    present(configurationViewContorller,animated: true ,completion: nil)
+//
+//    }
     
     @objc func pushTommrrowButton(){
         

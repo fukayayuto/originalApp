@@ -19,7 +19,7 @@ class WeatherViewController: UITableViewController,SegementSlideContentScrollVie
 //    var weatherData = WeatherData()
     var areaStringArray = [String]()
     var weatherIconArray = [String]()
-    var tempuretureArray = [Int]()
+    var tempuretureArray = [Double]()
     var descriptionArray = [String]()
     var weatherIdArray = [Int]()
     
@@ -141,7 +141,7 @@ class WeatherViewController: UITableViewController,SegementSlideContentScrollVie
             let json:JSON = JSON(responce.data as Any)
             print(json)
             let weatherIcon = json["weather"][0]["main"].string
-//            let tempureture = json["main"][0]["temp"].int
+            let tempureture = json["main"][0]["temp"].double
             let area  = json["name"].string
             let description = json["weather"][0]["description"].string
             let weatherId = json["weather"][0]["id"].int
