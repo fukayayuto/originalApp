@@ -21,19 +21,26 @@ class NewsViewController: UITableViewController,SegementSlideContentScrollViewDe
    
      var currentElemantName:String!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         tableView.register(UINib(nibName: "NewsCell", bundle: nil), forCellReuseIdentifier: "NewsCell")
-        tableView.backgroundColor = .darkGray
+        tableView.backgroundColor = .clear
         
         let urlString = "https://news.google.com/news/rss/headlines/section/topic/NATION.ja_jp/%E5%9B%BD%E5%86%85?ned=jp&hl=ja&gl=JP"
                let url:URL = URL(string:urlString)!
                parser = XMLParser(contentsOf: url)!
                parser.delegate = self
                parser.parse()
-           
-       
+        
+        let backgroudImage:UIImageView = UIImageView(frame: CGRect(x: 0, y: 0 , width: view.frame.size.width, height:view.frame.size.height))
+        backgroudImage.image = UIImage(named: "background")
+        backgroudImage.contentMode = .scaleToFill
+        tableView.tableFooterView = backgroudImage
+        tableView.tableFooterView?.layer.masksToBounds = true
+        view.insertSubview(backgroudImage, belowSubview: tableView)
+        
     }
 
     // MARK: - Table view data source
@@ -58,6 +65,8 @@ class NewsViewController: UITableViewController,SegementSlideContentScrollViewDe
         let newsData = self.newsData[indexPath.row]
         cell.NewsTextLabel.text = newsData.title
         cell.pubdataTextLabel.text = newsData.pubDate
+        cell.backgroundColor = .clear
+       
         
         return cell
 //        let cell = UITableViewCell(style: .subtitle, reuseIdentifier: "Cell")

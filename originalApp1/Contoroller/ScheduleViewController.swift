@@ -119,11 +119,12 @@ class ScheduleViewController: UITableViewController,SegementSlideContentScrollVi
     
     
     func showAnimation() {
-           let animationView = AnimationView(name: "checkAnimation")
+        let animationView = AnimationView(name: "checkAnimation")
            animationView.frame = CGRect(x: 0, y: 0, width: view.bounds.width/4, height: view.bounds.height/5)
            animationView.center = self.view.center
            animationView.contentMode = .scaleAspectFit
            animationView.animationSpeed = 0.5
+           animationView
            
            view.addSubview(animationView)
 
@@ -159,13 +160,18 @@ class ScheduleViewController: UITableViewController,SegementSlideContentScrollVi
          return view.frame.size.height/8
             }
     
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//
-//        scheduleArray.remove(at: indexPath.row)
-//        showAnimation()
-//        tableView.reloadData()
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TomorrowScheduleCell") as! TomorrowScheduleCell
+        cell.checkImageView.image = UIImage(named: "checkmark.rectangle")
+        showAnimation()
+        scheduleArray.remove(at: indexPath.row)
+        tableView.reloadData()
         
     }
+
+}
     
   
 
